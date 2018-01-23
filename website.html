@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js One Page Scroll Sites</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo." />
+	<meta name="keywords"  />
+	<meta name="Resource-type" content="Document" />
+
+	<!-- THIS CAN BE DONE WITH CDN LMG-->
+	<link rel="stylesheet" type="text/css" href="./jquery.fullPage.css" />
+	
+
+<style>
+	/* Style for our header texts
+	* --------------------------------------- */
+	body {
+		font-family: arial, helvetica;
+		font-size: 18px;
+	}
+
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	.section {
+		color: white;
+		text-align:center;
+	}
+
+	#menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 5px;
+		overflow: hidden;
+		background-color: paleturquoise;
+	}
+
+	#menu li {
+		font-size: 1em;
+		font-family: arial,helvetica;
+		float: left;
+		text-transform: uppercase;
+	}
+
+	#menu li a {
+		display: block;
+		text-decoration: none;
+		color: teal;
+		text-align: center;
+		padding: 14px 16px;
+	}
+
+	#menu li a:hover {
+		font-weight: 700;
+	}
+
+	
+
+	</style>
+
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+	<script scr="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	
+	<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-overscroll/1.7.7/jquery.overscroll.js"></script>
+
+	<script type="text/javascript" src="./jquery.fullPage.js"></script>
+
+<!-- calling fullpage - hello, we need u -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#76c2bd'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+		});
+
+		// 	{
+		// 		//Navigation
+		// menu: '#menu',
+		// lockAnchors: false,
+		// anchors:['firstPage', 'secondPage','3rdpage', '4thpage'],
+		// navigation: false,
+		// navigationPosition: 'right',
+		// navigationTooltips: ['firstSlide', 'secondSlide'],
+		// showActiveTooltip: false,
+		// slidesNavigation: false,
+		// slidesNavPosition: 'bottom',
+
+		// //Scrolling
+		// css3: true,
+		// scrollingSpeed: 700,
+		// autoScrolling: true,
+		// fitToSection: true,
+		// fitToSectionDelay: 1000,
+		// scrollBar: false,
+		// easing: 'easeInOutCubic',
+		// easingcss3: 'ease',
+		// loopBottom: false,
+		// loopTop: false,
+		// loopHorizontal: true,
+		// continuousVertical: false,
+		// // continuousHorizontal: false,
+		// // scrollHorizontally: false,
+		// // interlockedSlides: false,
+		// // dragAndMove: false,
+		// // offsetSections: false,
+		// // resetSliders: false,
+		// // fadingEffect: false,
+		// normalScrollElements: '#element1, .element2',
+		// scrollOverflow: false,
+		// // scrollOverflowReset: false,
+		// // scrollOverflowOptions: null,
+		// touchSensitivity: 15,
+		// normalScrollElementTouchThreshold: 5,
+		// bigSectionsDestination: null,
+
+		// //Accessibility
+		// keyboardScrolling: true,
+		// animateAnchor: true,
+		// recordHistory: true,
+
+		// //Design
+		// controlArrows: true,
+		// verticalCentered: true,
+		// sectionsColor : ['#ccc', '#fff'],
+		// paddingTop: '3em',
+		// paddingBottom: '10px',
+		// fixedElements: '#header, .footer',
+		// responsiveWidth: 0,
+		// responsiveHeight: 0,
+		// // responsiveSlides: false,
+		// // parallax: false,
+		// // parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+		// //Custom selectors
+		// sectionSelector: '.section',
+		// slideSelector: '.slide',
+
+		// lazyLoading: true,
+
+		// //events
+		// onLeave: function(index, nextIndex, direction){},
+		// afterLoad: function(anchorLink, index){},
+		// afterRender: function(){},
+		// afterResize: function(){},
+		// afterResponsive: function(isResponsive){},
+		// afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+		// onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+		// 	}
+		
+	</script>
+
+</head>
+<body>
+
+
+<!-- Important MENU for PAGES -->
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>
+
+<!-- WRAPPED IN FULLPAGE -->
+<div id="fullpage">
+	<div class="section" id="section0">
+		<h1>SHEPOW</h1>
+		 <input type="hidden" name="id" value="1" />
+		<p>Create A Beautiful Fullscreen Scrolling Website for our business</p>
+		<img src="imgs/fullPage.png" alt="fullPage" />
+	</div>
+
+	<div class="section" id="section1">
+		<div class="slide">
+			<div class="intro">
+				<h1>Create Sliders</h1>
+				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+				<img src="imgs/slider.png" alt="slider" />
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="imgs/1.png" alt="Simple" />
+				<h1>Simple - Slide 1</h1>
+				<p>Easy to use. Configurable and customizable.</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="imgs/2.png" alt="Cool" />
+				<h1>Cool - Slide 2</h1>
+				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<img src="imgs/3.png" alt="Compatible" />
+				<h1>Compatible - Slide 3</h1>
+				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Another Example</h1>
+			<p>HTML markup example to define 4 sections.</p>
+			<img src="imgs/example2.png" alt="example" />
+		</div>
+	</div>
+
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Working On Tablets</h1>
+			<p>
+				Designed to fit to different screen sizes as well as tablet and mobile devices.
+				<br /><br /><br /><br /><br /><br />
+			</p>
+		</div>
+		<img src="imgs/tablets.png" alt="tablets" />
+	</div>
+</div>
+
+</body>
+</html>
