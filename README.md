@@ -15,8 +15,8 @@
 **Access to super fancy things are available as extensions to purchase**
 https://alvarotrigo.com/fullPage/extensions/
 
-** - $40 for Parallax Effect** <br>
-** - $50 for Responsive Slides**
+- $40 for Parallax Effect** <br>
+- $50 for Responsive Slides**
 
 **We are also required to obtain a license (1 site free)**
 
