@@ -1,0 +1,45 @@
+
+	body {
+		font-family: arial, helvetica;
+		font-size: 18px;
+	}
+
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	
+	.section {
+		color: white;
+		text-align:center;
+	}
+
+	#menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 5px;
+		overflow: hidden;
+		background-color: paleturquoise;
+	}
+
+	#menu li {
+		font-size: 1em;
+		font-family: arial,helvetica;
+		float: left;
+		text-transform: uppercase;
+	}
+
+	#menu li a {
+		display: block;
+		text-decoration: none;
+		color: teal;
+		text-align: center;
+		padding: 14px 16px;
+	}
+
+	#menu li a:hover {
+		font-weight: 700;
+	}
